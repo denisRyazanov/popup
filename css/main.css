@@ -1,0 +1,132 @@
+@font-face {
+  font-family: Boboto-Light;
+  src: url(../assets/fonts/Roboto-Light.ttf); 
+}
+@font-face {
+  font-family: Boboto-Regular;
+  src: url(../assets/fonts/Roboto-Regular.ttf); 
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: none; }
+
+html {
+  font-size: 62.5%; }
+
+.fullscreen-bg {
+  overflow: hidden;
+  z-index: 2;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+/*  padding-top: 48%;*/
+}
+
+.fullscreen-bg__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 4; }
+
+.headerContent {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 22;
+  color: #fff;
+}
+.headerContent .top {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10%;
+}
+.headerContent .mainContent {
+	margin-left: 220px;
+}
+.top .logo {
+	background: url(../assets/img/Logo.png) no-repeat;
+	margin: 4.5rem 0 0 8.5rem;
+	width: 263px;
+	height: 70px;
+ }
+
+.top .lang {
+	margin: 4.5rem 8.5rem 0 0;
+	display: flex;
+	justify-content: flex-start;
+ }
+.lang a {
+	text-decoration: none;
+	height: 20px;
+	padding: .5rem;
+	color: #fff;
+}
+.lang a:hover {
+	text-decoration: none;
+	background-color: #fff;
+	color: #000;
+	border-radius: 2px;
+	cursor: pointer;
+}
+.headerContent h1 {
+	font: 5.4rem/6.4rem Roboto-Light;
+	margin-bottom: 2rem;
+}
+.headerContent h2 {
+	font: 3rem Roboto-Light;
+	margin-bottom: 4rem;
+}
+.mainContent .popup {
+	text-decoration: none;
+	font:  2rem Roboto-Light;
+	padding: 1.5rem 3rem;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 30px;
+	
+}
+.mainContent .popup:hover {
+	background: #fff;
+	color: #000;
+}
+.mainContent p {
+	font: 3rem Roboto-Light;
+	margin-top: 2rem;
+}
+.hidden {
+	display: none;
+}
+/*---------------------------------------FORM---------------------------------------------*/
+
+#form {
+	color: #000;
+	background: #fff;
+	width: 910px;
+	height: 530px;
+	margin: auto;
+	position: relative;
+}
+
+@media (max-width: 1024px) {
+  .fullscreen-bg {
+    background: url("../assets/img/Writing-Working.jpg") center center/cover no-repeat; }
+  .fullscreen-bg__video {
+    display: none; } }
+
+@media screen and (min-width: 320px) and (max-width: 414px) {
+  .clear {
+    clear: both; }
+
